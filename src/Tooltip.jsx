@@ -21,11 +21,7 @@ const TooltipContainer = styled.div`
 
 const Tooltip = ({ seatPosition }) => {
   return (
-    <TooltipContainer
-      x={seatPosition.x}
-      y={seatPosition.y}
-      $show={seatPosition.show}
-    >
+    <TooltipContainer x={0} y={0} $show={seatPosition.show}>
       {`${seatPosition.seatX} X ${seatPosition.seatY}`}
     </TooltipContainer>
   );

@@ -19,8 +19,6 @@ const Page1 = () => {
     setSeatPosition({
       seatX: seat.x,
       seatY: seat.y,
-      x: seat.x * 50,
-      y: seat.y * 50,
       show: true,
     });
   };
@@ -28,7 +26,7 @@ const Page1 = () => {
   return (
     <div>
       <h2>영화 좌석 선택</h2>
-      <div style={{ display: "flex", flexWrap: "wrap", width: "250px" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", width: "200px" }}>
         {seatDataArray.map((seat) => (
           <Seat
             key={seat.id}
